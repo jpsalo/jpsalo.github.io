@@ -22,22 +22,24 @@
     </item>
     
     <item>
-      <title>Hacker News Visualization</title>
+      <title>HN Viz</title>
       <link>https://jpsalo.github.io/project/hn-viz/</link>
       <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://jpsalo.github.io/project/hn-viz/</guid>
-      <description>&lt;p&gt;This is an interactive data visualization project with Hacker News data for discovering interesting stories. It shows 100 most voted and 100 most commented (duplicates removed) stories per each year in a bubble chart. Stories are divided in four category types: stories, jobs, projects (=show) and questions (=ask), and the bubble size is based on how many days was the discussion active. Contextual views show monthly statistics in bar charts, and also metadata of selected story with a link to the original thread in Hacker News. Application is here: hn-viz.herokuapp.com.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://jpsalo.github.io/img/hn-viz-1.png&#34; alt=&#34;Example image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;HN Viz is an interactive data visualization project with Hacker News data for discovering interesting stories. The app shows 100 most voted and 100 most commented stories per each year in a bubble chart. Stories are divided into four category types: stories, jobs, projects and questions, and the bubble size is based on how many days was the discussion active. Contextual views show monthly statistics in bar charts, and also metadata of selected story with a link to the original thread on Hacker News. Application is &lt;a href=&#34;http://hn-viz.herokuapp.com/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>extended mind</title>
+      <title>Extended Mind</title>
       <link>https://jpsalo.github.io/project/em/</link>
       <pubDate>Fri, 30 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://jpsalo.github.io/project/em/</guid>
-      <description>&lt;p&gt;You spend some of your best working hours focused on the software you use and not on the things you want to get done. Extended Mind provides a super simple, super fast, distraction-free replacement to cluttered office workflow tools. You can access Extended Mind from all of your devices to instantly manage your notes and tasks. This frees you to do what you do best: connect, create and collaborate.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://jpsalo.github.io/img/em-1.jpg&#34; alt=&#34;Example image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You spend some of your best working hours focused on the software you use and not on the things you want to get done. Extended Mind provides a super simple, super fast, distraction-free replacement to cluttered office workflow tools. You can access Extended Mind from all of your devices to instantly manage your notes and tasks. This frees you to do what you do best: connect, create and collaborate.&lt;/p&gt;
 &lt;h1 id=&#34;what-is-extended-mind&#34;&gt;What is Extended Mind?&lt;/h1&gt;
 &lt;p&gt;Extended Mind is a minimalist, cross-platform, open source productivity service for note and task management.&lt;/p&gt;
 &lt;p&gt;How can I use it?&lt;/p&gt;
@@ -48,6 +50,16 @@
 &lt;p&gt;The most unique aspect of Extended Mind is the strong scientific background and respect for human biology and psychology of our team, which guides the development of the service. For the service to become a true extended mind, the time it takes to both retrieve and store information has to be on par with our biological memory. This is why minimalism pervades the entire service: every unnecessary visual element and shiny feature will be removed if it distracts the user from the cognitive task she wants to perform. The service will be built using tools that provide the very best performance with the least amount of code. Extended Mind will always be focused on content and making it as easy and fast as possible to use it.&lt;/p&gt;
 &lt;p&gt;Another innovative feature of Extended Mind is the folderless storage of items. In Extended Mind every item can be grouped and associated to other items via a network of tags. Extended Mind gives you a set of well thought out categories and keywords that the user can start to use immediately, while still allowing the user the create her own tags.&lt;/p&gt;
 &lt;p&gt;In addition, the open source implementation of the service is a strong signal to the users that their information will never be exploited. This differentiates Extended Mind from the vast majority of technology startups, and is a good fit for the scientific method and the open access and open data movements.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shared Understanding of the User Experience</title>
+      <link>https://jpsalo.github.io/project/shared-understanding/</link>
+      <pubDate>Fri, 30 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://jpsalo.github.io/project/shared-understanding/</guid>
+      <description>&lt;p&gt;Software engineering is inherently social profession and implementing software depends on collaboration between group members. Requirements do not necessarily originate from cutting edge high technology but from customer’s business needs, which brings a new set of problems to be solved—problems that are sociological, not technical. (Whitehead 2007; Fagerholm 2015; Fox, Sillito, &amp;amp; Maurer 2008; DeMarco &amp;amp; Lister 2013, p. 4) Additionally, the goal for many projects is to develop complex systems and design good user experience (UX). Responding to the changed demands for system quality attributes by incorporating design thinking, such as User-Centered Design (UCD), into iterative development is applicable to these circumstances but clear guidelines have not yet surfaced. (Ralph 2015; Fox, Sillito, &amp;amp; Maurer 2008; Kuusinen 2015; Magües, Castro, &amp;amp; Acuña 2016)&lt;/p&gt;
 </description>
     </item>
     
