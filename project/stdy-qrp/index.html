@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.62.2" />
 
   
 
@@ -94,7 +94,7 @@
     
     
     
-    <link rel="stylesheet" href="/css/academia.fddfb2c0cad63c9d5eb415db05cfdeeb.css">
+    <link rel="stylesheet" href="/css/academia.3d6a528cffb95f5ffb15a1418009235b.css">
   
 
   
@@ -239,7 +239,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/authors/admin"><span>About</span></a>
+          <a class="nav-link " href="/authors/jp"><span>About</span></a>
         </li>
 
         
@@ -380,7 +380,41 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      <p>Throughout their studies, students may encounter problems in their courses where they need help from their teachers or from their peers but lectures and other contact teaching sessions can be at unsuitable times. Even though many courses have their own communication channels for seeking help, there are situations where the subjective experience of learning is better when done in collaboration with peers. This brings us to the three things needed for successfully studying together: shared location, time and a common subject. In this paper, we study how do we make it easy for students to arrange and participate impromptu study groups and present an application which combines space, time and problem into creating an ad hoc study group. Our testing concentrated on determining the best way for creator to communicate the subject of the group to other students in order to reach and match with as many potential peers as possible. Users were asked to use the application with two different interfaces and messages, and then fill in a survey about their experience. It was found that for the group creator, it is easier to express their problem in their own words, but group participants may find messages with predetermined and more generic subjects easier to understand and thus they are potentially more likely to participate in these study groups.</p>
+      <h1 id="todo-image">TODO: Image</h1>
+<p>Throughout their studies, students may encounter problems in their courses where they need help from their teachers or from their peers but lectures and other contact teaching sessions can be at unsuitable times. Even though many courses have their own communication channels for seeking help, there are situations where the subjective experience of learning is better when done in collaboration with peers. This brings us to the three things needed for successfully studying together: shared location, time and a common subject. In Stdy QRp, we evaluate how do we make it easy for students to arrange and participate in impromptu study groups and present an application which combines space, time and problem into creating an ad hoc study group. Our testing concentrated on determining the best way for creator to communicate the subject of the group to other students in order to reach and match with as many potential peers as possible. Users were asked to use the application with two different interfaces and messages, and then fill in a survey about their experience. It was found that for the group creator, it is easier to express their problem in their own words, but group participants may find messages with predetermined and more generic subjects easier to understand and thus they are potentially more likely to participate in these study groups. Application is <a href="http://qrp.herokuapp.com/" target="_blank">here</a>
+</p>
+<p>In detail, we investigate <em>the effort to find peers at the ‘right time’ by creating an impromptu study group and how likely are people to join the group</em>.</p>
+<h1 id="needfinding">Needfinding</h1>
+<p>Our study followed human-centered design process (Norman, 2013, Ch. 6): “Make observations on the intended target population, generate ideas, produce prototypes and test them.”</p>
+<p>Stakeholder map represents all the people involved (Figure 1) and is an additional verification that the student is at the core of the study, and thus students are the population we interviewed and the persona we based the PACT analysis (Table 1).</p>
+<h1 id="todo-figure-1">TODO: Figure 1</h1>
+<h2 id="interview--observation-findings">Interview &amp; Observation findings</h2>
+<p>The interview was done for five participants—three women and two men. They all study different things, one Bachelor’s student and four Master’s students. Their library use varies from daily to “not that often”. All participants study also in other libraries, such as Kaisa.</p>
+<p>Interview and observation focused mainly on library use and study environment and the combined findings suggest that people study, seek information and use computers. Finding a place to study or other students happens primarily by visually browsing the space and walking around, causing noises—even though it’s a library and speaking out loud is discouraged, it’s not as quiet as one would expect. People also don’t take breaks (leave their place) as regularly as they said in the interviews. It looks like that, in the evening in Kaisa house, group rooms could be utilized more efficiently, so ad hoc study groups could be potentially created there, in addition to Kumpula campus.</p>
+<h2 id="brainstorming-design-critique--more-brainstorming">Brainstorming, Design critique &amp; More Brainstorming</h2>
+<p>Even though the main idea and motivation for the system are simple, the end product is in many ways very different from the draft produced after brainstorming sessions—the goal for the sessions were to develop ideas without technical restrictions and time limitations, which were then converged into the end product.</p>
+<p>Major design difference between the draft and end product related to connecting the system to physical space (via UbiKampus) and creating profiles for students. UbiKampus connection was intended to use bluetooth indoor navigation and message bus. Users were envisioned to have two profiles: information seeker and receiver, both profiles sharing same pool of predetermined topics of interest (i.e. in the context of Full Stack web development) in order to trivialize the complexity of matchmaking. In case of a match, the system would have notified users and potentially suggested free group study room.</p>
+<p>Based on the aforementioned features—which are described in the storyboard (Figure 2) and explained further in the Discussion chapter—and after feedback from design critique and re-thinking of the concept, we implemented a system with same idea but with a more feasible approach.</p>
+<h1 id="todo-figure-2">TODO: Figure 2</h1>
+<h1 id="the-implementation-stdy-qrp">The implementation (Stdy QRp)</h1>
+<p>Our proposed solution is based on the idea of facilitating the room booking by leveraging QR codes and chat-based interaction. The rationale is that 1) QR codes placed at campus would allow people to access a smartphone application and to tie the group to the location; and that 2) A chat reach those students who likely have similar knowledge and ongoing courses. Student is asked to fill in a few details, and the time starts when the group is created. The subject of the group is then published on the Telegram channel of a course the student is attending. The solution could be integrated to existing course channels in Telegram.</p>
+<p>The basic use case begins with reading the QR code of the room. The application tells the user that she is in a certain room (Figure 5). Then the user fills the required information: subject or description of the group (Figure 6), user name and the course channel where the message (subject, time and place) will be published (Figure 7). Screenshots illustrate the two versions used in the evaluation.</p>
+<h1 id="todo-figure-5-6-7">TODO: Figure 5, 6, 7</h1>
+<h1 id="user-study">User Study</h1>
+<p>In this chapter, we describe the purpose and procedure of the study and what do we measure; participants, how we recruited them and the instructions and tasks that we gave them. We implemented the system with an assumption that it would make easier for students to arrange and participate impromptu study groups, and a laboratory experiment was designed to get preliminary insights on the research questions about matchmaking and user experience.</p>
+<h2 id="procedure">Procedure</h2>
+<p>The experiment followed a within-subjects design with one independent variable (IV) being the way the group is created and it is designed to understand and measure to what extent the system really makes it easier and more likely for students to arrange and join impromptu study groups. We modified IV based on two questions: (1) Which kind of notification text would be more effective when creating impromptu study groups with a chat-based system; (2) Is matchmaking more efficient with specific than with generic subject description?</p>
+<p>We recruited three (1M, 2F) Helsinki University students that were willing to use the app and were suitable for the study, based on the inclusion criterion: “Students of Full Stack course”. After the experiment, the participants were instructed to answer comparative questions about what are the advantages and disadvantages of using the system as opposed to other ways to find last minute help with their studies such as course chat. We also asked them to report their overall impressions of the system because collecting subjective feedback about “Your feelings about the study group” in combination with the comparative questions will provide more reliable answers.</p>
+<p>The experiment investigates creating a group with two different ways: selecting best closest match for creator’s problem from predefined subjects (drop-down menu) vs. letting the creator express the subject of the group by her own words (free-text field). Then, the tone and content of the notification text sent by the IM bot is chosen to be either more terse or verbose. The participants are asked how well does the bot message and the subject of the group—that is, implicit or explicit description and notification—correspond with the given problem and what would increase the odds to match and reach as many relevant peers as possible.</p>
+<h1 id="results">Results</h1>
+<h2 id="effort-to-create-a-group">Effort to create a group</h2>
+<p>The creator understood what the application is for and how to use it to achieve her goal.  Group creation was also reported to be easy. Right selection for the problem was not as easy to find from predetermined list of group subjects as it was to describe it in own words.</p>
+<h2 id="likelihood-to-participate-a-group">Likelihood to participate a group</h2>
+<p>Peers are likely to join a study group set up by another person, no matter if they don’t know the creator or whether the creator is a student or a teacher. The group message was generally well understood but the predetermined subject of the group was preferred over the creator’s own description. The responses suggest that our system is an easy way to get to know about study groups, although the answers are not unanimous.</p>
+<h2 id="subjective-feedback">Subjective feedback</h2>
+<p>All participants believe technology can help in finding people to study with and that studying in a group affects positively to their study experience. They all have encountered a need to solve study problems with peers and have been in situations where they would have liked to find peers to study with, or as was written in one participant’s answer:</p>
+<p><em>“Many times when I get stuck, it would be better to discuss it with someone, many times it takes a lot more time to solve the problem while continuing working alone.”</em></p>
+<p>It was found that the right selection for the problem the creator was facing was not as easy to find from predetermined list of group subjects as it was to describe it in own words, which presumably means that when people are stuck with specific problem, they are looking for specific answers. On the other hand, peers preferred predetermined subject of the group over the creator’s own description, which presumably means that people with accumulated knowledge about a subject are willing to help in a broad area of problems whereas explicit problem is not as relatable. Subjective feedback also indicate that the predetermined subject helps in recollecting what was done in a particular course. It’s arguably meaningful to describe problem explicitly in own words but the tradeoff is that chances to reach potential peers and matchmaking diminishes.</p>
 
     </div>
 
@@ -499,7 +533,6 @@
         <p>
           
           Powered by
-          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
         </p>
       </div>
