@@ -17,31 +17,148 @@
       <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://jpsalo.github.io/project/stdy-qrp/</guid>
-      <description>&lt;h1 id=&#34;todo-image&#34;&gt;TODO: Image&lt;/h1&gt;
-&lt;p&gt;Throughout their studies, students may encounter problems in their courses where they need help from their teachers or from their peers but lectures and other contact teaching sessions can be at unsuitable times. Even though many courses have their own communication channels for seeking help, there are situations where the subjective experience of learning is better when done in collaboration with peers. This brings us to the three things needed for successfully studying together: shared location, time and a common subject. In Stdy QRp, we evaluate how do we make it easy for students to arrange and participate in impromptu study groups and present an application which combines space, time and problem into creating an ad hoc study group. Our testing concentrated on determining the best way for creator to communicate the subject of the group to other students in order to reach and match with as many potential peers as possible. Users were asked to use the application with two different interfaces and messages, and then fill in a survey about their experience. It was found that for the group creator, it is easier to express their problem in their own words, but group participants may find messages with predetermined and more generic subjects easier to understand and thus they are potentially more likely to participate in these study groups. Application is &lt;a href=&#34;http://qrp.herokuapp.com/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
+      <description>&lt;p&gt;Throughout their studies, students may encounter problems in their courses where they need help from their teachers or from their peers but lectures and other contact teaching sessions can be at unsuitable times. Even though many courses have their own communication channels for seeking help, there are situations where the subjective experience of learning is better when done in collaboration with peers. This brings us to the three things needed for successfully studying together: shared location, time and a common subject. In Stdy QRp, we evaluate how do we make it easy for students to arrange and participate in impromptu study groups and present an application which combines space, time and problem into creating an ad hoc study group. Our testing concentrated on determining the best way for creator to communicate the subject of the group to other students in order to reach and match with as many potential peers as possible. Users were asked to use the application with two different interfaces and messages, and then fill in a survey about their experience. It was found that for the group creator, it is easier to express their problem in their own words, but group participants may find messages with predetermined and more generic subjects easier to understand and thus they are potentially more likely to participate in these study groups. Application is &lt;a href=&#34;http://qrp.herokuapp.com/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
 &lt;/p&gt;
 &lt;p&gt;In detail, we investigate &lt;em&gt;the effort to find peers at the ‘right time’ by creating an impromptu study group and how likely are people to join the group&lt;/em&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;needfinding&#34;&gt;Needfinding&lt;/h1&gt;
-&lt;p&gt;Our study followed human-centered design process (Norman, 2013, Ch. 6): “Make observations on the intended target population, generate ideas, produce prototypes and test them.”&lt;/p&gt;
-&lt;p&gt;Stakeholder map represents all the people involved (Figure 1) and is an additional verification that the student is at the core of the study, and thus students are the population we interviewed and the persona we based the PACT analysis (Table 1).&lt;/p&gt;
-&lt;h1 id=&#34;todo-figure-1&#34;&gt;TODO: Figure 1&lt;/h1&gt;
+&lt;p&gt;Our study followed human-centered design process (Norman, 2013, Ch. 6): &lt;em&gt;&amp;ldquo;Make observations on the intended target population, generate ideas, produce prototypes and test them.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Stakeholder map represents all the people involved and is an additional verification that the student is at the core of the study, and thus students are the population we interviewed and the persona we based the PACT analysis (TODO: Table 1).&lt;/p&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://jpsalo.github.io/img/stdy-qrp-stakeholder-map.svg&#34; alt=&#34;Stakeholder map of people who gain or deliver value&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    Stakeholder map of people who gain or deliver value
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
 &lt;h2 id=&#34;interview--observation-findings&#34;&gt;Interview &amp;amp; Observation findings&lt;/h2&gt;
-&lt;p&gt;The interview was done for five participants—three women and two men. They all study different things, one Bachelor’s student and four Master’s students. Their library use varies from daily to “not that often”. All participants study also in other libraries, such as Kaisa.&lt;/p&gt;
+&lt;p&gt;The interview was done for five participants—three women and two men. They all study different things, one Bachelor’s student and four Master’s students. Their library use varies from daily to &lt;em&gt;&amp;ldquo;not that often&amp;rdquo;&lt;/em&gt;. All participants study also in other libraries, such as Kaisa.&lt;/p&gt;
 &lt;p&gt;Interview and observation focused mainly on library use and study environment and the combined findings suggest that people study, seek information and use computers. Finding a place to study or other students happens primarily by visually browsing the space and walking around, causing noises—even though it’s a library and speaking out loud is discouraged, it’s not as quiet as one would expect. People also don’t take breaks (leave their place) as regularly as they said in the interviews. It looks like that, in the evening in Kaisa house, group rooms could be utilized more efficiently, so ad hoc study groups could be potentially created there, in addition to Kumpula campus.&lt;/p&gt;
 &lt;h2 id=&#34;brainstorming-design-critique--more-brainstorming&#34;&gt;Brainstorming, Design critique &amp;amp; More Brainstorming&lt;/h2&gt;
 &lt;p&gt;Even though the main idea and motivation for the system are simple, the end product is in many ways very different from the draft produced after brainstorming sessions—the goal for the sessions were to develop ideas without technical restrictions and time limitations, which were then converged into the end product.&lt;/p&gt;
 &lt;p&gt;Major design difference between the draft and end product related to connecting the system to physical space (via UbiKampus) and creating profiles for students. UbiKampus connection was intended to use bluetooth indoor navigation and message bus. Users were envisioned to have two profiles: information seeker and receiver, both profiles sharing same pool of predetermined topics of interest (i.e. in the context of Full Stack web development) in order to trivialize the complexity of matchmaking. In case of a match, the system would have notified users and potentially suggested free group study room.&lt;/p&gt;
-&lt;p&gt;Based on the aforementioned features—which are described in the storyboard (Figure 2) and explained further in the Discussion chapter—and after feedback from design critique and re-thinking of the concept, we implemented a system with same idea but with a more feasible approach.&lt;/p&gt;
-&lt;h1 id=&#34;todo-figure-2&#34;&gt;TODO: Figure 2&lt;/h1&gt;
+&lt;p&gt;Based on the aforementioned features and after feedback from design critique and re-thinking of the concept, we implemented a system with same idea but with a more feasible approach.&lt;/p&gt;
 &lt;h1 id=&#34;the-implementation-stdy-qrp&#34;&gt;The implementation (Stdy QRp)&lt;/h1&gt;
 &lt;p&gt;Our proposed solution is based on the idea of facilitating the room booking by leveraging QR codes and chat-based interaction. The rationale is that 1) QR codes placed at campus would allow people to access a smartphone application and to tie the group to the location; and that 2) A chat reach those students who likely have similar knowledge and ongoing courses. Student is asked to fill in a few details, and the time starts when the group is created. The subject of the group is then published on the Telegram channel of a course the student is attending. The solution could be integrated to existing course channels in Telegram.&lt;/p&gt;
-&lt;p&gt;The basic use case begins with reading the QR code of the room. The application tells the user that she is in a certain room (Figure 5). Then the user fills the required information: subject or description of the group (Figure 6), user name and the course channel where the message (subject, time and place) will be published (Figure 7). Screenshots illustrate the two versions used in the evaluation.&lt;/p&gt;
-&lt;h1 id=&#34;todo-figure-5-6-7&#34;&gt;TODO: Figure 5, 6, 7&lt;/h1&gt;
+&lt;p&gt;The basic use case begins with reading the QR code of the room. The application tells the user that she is in a certain room.&lt;/p&gt;
+
+
+
+
+
+
+&lt;figure class=&#34;figure_img&#34;&gt;
+
+&lt;img src=&#34;https://jpsalo.github.io/img/stdy-qrp-room.png&#34; alt=&#34;The application shows the selected room&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    The application shows the selected room
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;Then the user fills the required information: subject or description of the group, user name and the course channel where the message (subject, time and place) will be published. Screenshots illustrate the two versions used in the evaluation.&lt;/p&gt;
+
+
+
+
+
+
+&lt;figure class=&#34;figure_img&#34;&gt;
+
+&lt;img src=&#34;https://jpsalo.github.io/img/stdy-qrp-create-a.png&#34; alt=&#34;Group creation: variant A&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    Group creation: variant A
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+&lt;figure class=&#34;figure_img&#34;&gt;
+
+&lt;img src=&#34;https://jpsalo.github.io/img/stdy-qrp-create-b.jpg&#34; alt=&#34;Group creation: variant B&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    Group creation: variant B
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+&lt;figure class=&#34;figure_img&#34;&gt;
+
+&lt;img src=&#34;https://jpsalo.github.io/img/stdy-qrp-created.png&#34; alt=&#34;The appearance of the messages depends on the form in which the group was created&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    The appearance of the messages depends on the form in which the group was created
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
 &lt;h1 id=&#34;user-study&#34;&gt;User Study&lt;/h1&gt;
 &lt;p&gt;In this chapter, we describe the purpose and procedure of the study and what do we measure; participants, how we recruited them and the instructions and tasks that we gave them. We implemented the system with an assumption that it would make easier for students to arrange and participate impromptu study groups, and a laboratory experiment was designed to get preliminary insights on the research questions about matchmaking and user experience.&lt;/p&gt;
 &lt;h2 id=&#34;procedure&#34;&gt;Procedure&lt;/h2&gt;
 &lt;p&gt;The experiment followed a within-subjects design with one independent variable (IV) being the way the group is created and it is designed to understand and measure to what extent the system really makes it easier and more likely for students to arrange and join impromptu study groups. We modified IV based on two questions: (1) Which kind of notification text would be more effective when creating impromptu study groups with a chat-based system; (2) Is matchmaking more efficient with specific than with generic subject description?&lt;/p&gt;
-&lt;p&gt;We recruited three (1M, 2F) Helsinki University students that were willing to use the app and were suitable for the study, based on the inclusion criterion: “Students of Full Stack course”. After the experiment, the participants were instructed to answer comparative questions about what are the advantages and disadvantages of using the system as opposed to other ways to find last minute help with their studies such as course chat. We also asked them to report their overall impressions of the system because collecting subjective feedback about “Your feelings about the study group” in combination with the comparative questions will provide more reliable answers.&lt;/p&gt;
+&lt;p&gt;We recruited three (1M, 2F) Helsinki University students that were willing to use the app and were suitable for the study, based on the inclusion criterion: &lt;em&gt;&amp;ldquo;Students of Full Stack course&amp;rdquo;&lt;/em&gt;. After the experiment, the participants were instructed to answer comparative questions about what are the advantages and disadvantages of using the system as opposed to other ways to find last minute help with their studies such as course chat. We also asked them to report their overall impressions of the system because collecting subjective feedback about &lt;em&gt;&amp;ldquo;Your feelings about the study group&amp;rdquo;&lt;/em&gt; in combination with the comparative questions will provide more reliable answers.&lt;/p&gt;
 &lt;p&gt;The experiment investigates creating a group with two different ways: selecting best closest match for creator’s problem from predefined subjects (drop-down menu) vs. letting the creator express the subject of the group by her own words (free-text field). Then, the tone and content of the notification text sent by the IM bot is chosen to be either more terse or verbose. The participants are asked how well does the bot message and the subject of the group—that is, implicit or explicit description and notification—correspond with the given problem and what would increase the odds to match and reach as many relevant peers as possible.&lt;/p&gt;
 &lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
 &lt;h2 id=&#34;effort-to-create-a-group&#34;&gt;Effort to create a group&lt;/h2&gt;
@@ -50,7 +167,7 @@
 &lt;p&gt;Peers are likely to join a study group set up by another person, no matter if they don’t know the creator or whether the creator is a student or a teacher. The group message was generally well understood but the predetermined subject of the group was preferred over the creator’s own description. The responses suggest that our system is an easy way to get to know about study groups, although the answers are not unanimous.&lt;/p&gt;
 &lt;h2 id=&#34;subjective-feedback&#34;&gt;Subjective feedback&lt;/h2&gt;
 &lt;p&gt;All participants believe technology can help in finding people to study with and that studying in a group affects positively to their study experience. They all have encountered a need to solve study problems with peers and have been in situations where they would have liked to find peers to study with, or as was written in one participant’s answer:&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;“Many times when I get stuck, it would be better to discuss it with someone, many times it takes a lot more time to solve the problem while continuing working alone.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;Many times when I get stuck, it would be better to discuss it with someone, many times it takes a lot more time to solve the problem while continuing working alone.&amp;quot;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It was found that the right selection for the problem the creator was facing was not as easy to find from predetermined list of group subjects as it was to describe it in own words, which presumably means that when people are stuck with specific problem, they are looking for specific answers. On the other hand, peers preferred predetermined subject of the group over the creator’s own description, which presumably means that people with accumulated knowledge about a subject are willing to help in a broad area of problems whereas explicit problem is not as relatable. Subjective feedback also indicate that the predetermined subject helps in recollecting what was done in a particular course. It’s arguably meaningful to describe problem explicitly in own words but the tradeoff is that chances to reach potential peers and matchmaking diminishes.&lt;/p&gt;
 </description>
     </item>
@@ -61,7 +178,7 @@
       <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://jpsalo.github.io/project/hn-viz/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://jpsalo.github.io/img/hn-viz-1.png&#34; alt=&#34;Example image&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://jpsalo.github.io/img/hn-viz-1.png&#34; alt=&#34;Bubble chart&#34;&gt;&lt;/p&gt;
 &lt;p&gt;HN Viz is an interactive data visualization application with Hacker News data for discovering interesting stories. The app shows 100 most voted and 100 most commented stories per each year in a bubble chart. Stories are divided into four category types: stories, jobs, projects and questions, and the bubble size is based on how many days was the discussion active. Contextual views show monthly statistics in bar charts, and also metadata of selected story with a link to the original thread on Hacker News. Application is &lt;a href=&#34;http://hn-viz.herokuapp.com/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
 &lt;/p&gt;
 
@@ -111,11 +228,85 @@
 &lt;p&gt;How can I use it?&lt;/p&gt;
 &lt;p&gt;Extended Mind gives you a place to store your private notes and tasks and to instantly access them using any of your devices.&lt;/p&gt;
 &lt;p&gt;To achieve super fast retrieving, Extended Mind gives tools to easily tag of notes and tasks, and also gives you instant full text search of all of your information. Instead of every single user coming up with their own tags, Extended Mind gives you a set of categories for items and also a set of well thought out public keywords.&lt;/p&gt;
-&lt;p&gt;Extended Mind is free to use right away. You can try out the app without registration and later on sign up for a free account. Upgrading to the premium version of the Extended Mind let’s you simultaneously connect unlimited number of devices to your account.&lt;/p&gt;
-&lt;h1 id=&#34;innovativeness&#34;&gt;INNOVATIVENESS&lt;/h1&gt;
+&lt;p&gt;Extended Mind is free to use right away. Application is &lt;a href=&#34;https://ext.md/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;innovativeness&#34;&gt;Innovativeness&lt;/h1&gt;
 &lt;p&gt;The most unique aspect of Extended Mind is the strong scientific background and respect for human biology and psychology of our team, which guides the development of the service. For the service to become a true extended mind, the time it takes to both retrieve and store information has to be on par with our biological memory. This is why minimalism pervades the entire service: every unnecessary visual element and shiny feature will be removed if it distracts the user from the cognitive task she wants to perform. The service will be built using tools that provide the very best performance with the least amount of code. Extended Mind will always be focused on content and making it as easy and fast as possible to use it.&lt;/p&gt;
 &lt;p&gt;Another innovative feature of Extended Mind is the folderless storage of items. In Extended Mind every item can be grouped and associated to other items via a network of tags. Extended Mind gives you a set of well thought out categories and keywords that the user can start to use immediately, while still allowing the user the create her own tags.&lt;/p&gt;
 &lt;p&gt;In addition, the open source implementation of the service is a strong signal to the users that their information will never be exploited. This differentiates Extended Mind from the vast majority of technology startups, and is a good fit for the scientific method and the open access and open data movements.&lt;/p&gt;
+&lt;h1 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h1&gt;
+
+
+
+
+
+
+&lt;figure class=&#34;figure_img&#34;&gt;
+
+&lt;img src=&#34;https://jpsalo.github.io/img/em-2.jpg&#34; alt=&#34;See your agenda for today&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    See your agenda for today
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+&lt;figure class=&#34;figure_img&#34;&gt;
+
+&lt;img src=&#34;https://jpsalo.github.io/img/em-3.jpg&#34; alt=&#34;Quickly find your way around the app&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    Quickly find your way around the app
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://jpsalo.github.io/img/em-4.png&#34; alt=&#34;Edit your notes on desktop&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    Edit your notes on desktop
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
 </description>
     </item>
     
@@ -126,6 +317,50 @@
       
       <guid>https://jpsalo.github.io/project/shared-understanding/</guid>
       <description>&lt;p&gt;Software engineering is inherently social profession and implementing software depends on collaboration between group members. Requirements do not necessarily originate from cutting edge high technology but from customer’s business needs, which brings a new set of problems to be solved—problems that are sociological, not technical. (Whitehead 2007; Fagerholm 2015; Fox, Sillito, &amp;amp; Maurer 2008; DeMarco &amp;amp; Lister 2013, p. 4) Additionally, the goal for many projects is to develop complex systems and design good user experience (UX). Responding to the changed demands for system quality attributes by incorporating design thinking, such as User-Centered Design (UCD), into iterative development is applicable to these circumstances but clear guidelines have not yet surfaced. (Ralph 2015; Fox, Sillito, &amp;amp; Maurer 2008; Kuusinen 2015; Magües, Castro, &amp;amp; Acuña 2016)&lt;/p&gt;
+&lt;p&gt;Software systems are built by people. The cross-functional interdisciplinary group is a heterogeneous set of people from different backgrounds and initially they may have different—atomistic instead of holistic—perspective of what is important in the system under development (Holtzblatt &amp;amp; Beyer 2016, p. 82; Gothelf &amp;amp; Seiden 2016, p. 41). Software system is more than the sum of its parts, it has emergent properties, so the group that is implementing the system has to form a shared understanding to achieve conceptual integrity and ultimately a satisfactory UX.&lt;/p&gt;
+&lt;p&gt;This study examines how developers and designers form a shared understanding of the UX with collaboration. In this study, collaboration is defined as communication and producing artifacts. Collaboration is needed for problem solving and information sharing. Communication and the artifacts they produce are means to form a shared understanding among the group. The group switches freely between the activities of exploring the problem and solution space throughout the process and produces artifacts to represent the design intent.&lt;/p&gt;
+&lt;h2 id=&#34;research-questions&#34;&gt;Research questions&lt;/h2&gt;
+&lt;p&gt;The objective of this study is to examine how UX is acknowledged in product development—how a group of people is able to solve relevant problems in terms of the system’s life cycle and evolution so that they achieve satisfactory UX. This study targets iterative development, and how well it is applied in the context of user needs and requirements elicitation. The central theme is collaboration between developers and designers: what are the methods (e.g. UCD, Agile), how are those applied in practice and how do they acknowledge the term &amp;ldquo;user experience&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Specifically, the focus of this study is collaborative software engineering, design thinking and UX. The main research problem addressed in this study is:
+What kind of knowledge is shared between developers and designers?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RQ1&lt;/strong&gt;: How do developers and designers form a shared understanding of the software system UX under development?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RQ2&lt;/strong&gt;: What are the artifacts utilized in their collaboration?&lt;/p&gt;
+&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
+&lt;p&gt;The results are reported as follows: (1) Problem Conceptualization in Up-Front Design; (2) UX Confluences Between Developers and Designers; and (3) Artifacts Utilized in the Collaboration Between Developers and Designers. Section (1) will present the phase in the studied case where the UX was conceptualized. This section will describe the problem, users and their needs the participants identified and decided to converge to. This section will outline which quality attributes of the system are important for particular users (for example, learnability is important for the staff members). Sections (2) and (3) build upon the contents of section (1) will provide an answer to the research questions. The sections (2) and (3) will present the process followed and the artifacts utilized in the studied case as well as the phases within the process which are essential to achieve satisfactory UX.&lt;/p&gt;
+&lt;h2 id=&#34;problem-conceptualization-in-up-front-design&#34;&gt;Problem Conceptualization in Up-Front Design&lt;/h2&gt;
+&lt;p&gt;People’s needs are somewhat static. Therefore they remain largely unchanged throughout the system’s lifecycle. The employees who were part of this phase spent substantial time to understand the needs of their customers. Once they were accumulated enough knowledge about the needs, they had the necessary data to understand what kind of user experience they are able to design for, that is, how to provide satisfactory user experience meanwhile the customer fulfills her need by using the system. They do it by reflecting the user experience in the system’s quality attributes&lt;/p&gt;
+&lt;h2 id=&#34;ux-confluences-between-developers-and-designers&#34;&gt;UX Confluences Between Developers and Designers&lt;/h2&gt;
+&lt;p&gt;Three distinct phases within the process in the studied case were identified that are relevant for how developers and designers form shared understanding of the system UX under development: (1) Design Intent; (2) Design Handoff; and (3) Implementation. This chapter will decipher what happens in the process during these phases as well as what artifacts are used in collaboration between developers and designers during them. Some key artifacts are introduced here but a more in-depth analysis ir in the next chapter.&lt;/p&gt;
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://jpsalo.github.io/img/ux-confluences.svg&#34; alt=&#34;UX Confluences Between Developers and Designers&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  
+  &lt;p&gt;
+    UX Confluences Between Developers and Designers
+    
+    
+    
+  &lt;/p&gt; 
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;It was found that developers and designers form shared understanding of the system UX under development by UX confluences illustrated in the figure. They are &amp;ldquo;meeting points&amp;rdquo; within the process, so to say, where developers and designers should collaborate in order to achieve satisfactory UX. Next, the confluences are briefly presented, followed by rationale why are they important for the shared understanding of the UX.&lt;/p&gt;
+&lt;p&gt;The first confluence is called &amp;ldquo;Design intent&amp;rdquo; and it happens at the start of an iterative cycle. The company in the studied case is design-oriented and the team involves customers in the process as much as possible. In this confluence, the team tries to reflect customers’ needs in the system’s quality attributes and they do this by simulating customers’ behaviour with paper prototypes. In this confluence, the team tries to include as many diverse opinions as possible to think about the problem and then to converge into single solution.&lt;/p&gt;
+&lt;p&gt;The second confluence is &amp;ldquo;Design handoff&amp;rdquo; and at this point, the team has written use cases for this cycle and conclude that the design is &amp;ldquo;finished&amp;rdquo;. Design is represented as an interactive prototype in Zeplin tool.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Implementation&amp;rdquo; is the last confluence and it is at the end of the cycle. But instead of releasing, the developers will do quality assurance first by peer reviews and by demoing both internally within the team and externally to some customers to receive feedback.&lt;/p&gt;
+&lt;p&gt;What makes these confluences important for UX? During &amp;ldquo;Design intent&amp;rdquo; lot of prioritizing happens. The team narrows down the scope and converge into solution which is represented as interactive prototype. This means that some of the essential knowledge about the UX is not documented anywhere and just gets lost. On the other hand, the developers should aim to represent the design intent with their implementation, not just the prototype and use cases they receive. And this is the key in this case. The developers are to a large extent responsible for the quality assurance. And, obviously, it’s the implementation, not the design intent the customers will use. And when the developers are part of &amp;ldquo;Design intent&amp;rdquo; confluence, they are able to draw the distinction between the core and peripheral functions of the solution so they can start writing automated tests for the core functionality instead of being unaware of the customers’ needs before they will provide feedback for the finished implementation. Because prioritizing and converging in this case means that they will implement some of the ideas now and others later which means that there will be changes. And by testing the core functionality, the developers are more prepared for changes and can also avoid the need for longer re-iteration but instead &amp;ldquo;build the thing right&amp;rdquo; at the first time.&lt;/p&gt;
+&lt;p&gt;But. Not every developer is design-oriented or interested in design and they are generally only part of the design handoff, which is perfectly fine but not necessarily good for the shared understanding of the UX.&lt;/p&gt;
 </description>
     </item>
     
