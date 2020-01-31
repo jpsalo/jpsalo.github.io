@@ -22,7 +22,7 @@
 &lt;p&gt;In detail, we investigate &lt;em&gt;the effort to find peers at the ‘right time’ by creating an impromptu study group and how likely are people to join the group&lt;/em&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;needfinding&#34;&gt;Needfinding&lt;/h1&gt;
 &lt;p&gt;Our study followed human-centered design process (Norman, 2013, Ch. 6): &lt;em&gt;&amp;ldquo;Make observations on the intended target population, generate ideas, produce prototypes and test them.&amp;quot;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Stakeholder map represents all the people involved and is an additional verification that the student is at the core of the study, and thus students are the population we interviewed and the persona we based the PACT analysis (TODO: Table 1).&lt;/p&gt;
+&lt;p&gt;Stakeholder map represents all the people involved and is an additional verification that the student is at the core of the study, and thus students are the population we interviewed and the persona we based the PACT analysis.&lt;/p&gt;
 
 
 
@@ -47,6 +47,36 @@
 
 &lt;/figure&gt;
 
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Person&lt;/strong&gt;: Student, 20-50 years&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;University level degree&lt;/li&gt;
+&lt;li&gt;She can be either a new student from lower education or someone with experience from previous degrees or work etc.&lt;/li&gt;
+&lt;li&gt;Most likely able to communicate in English&lt;/li&gt;
+&lt;li&gt;Studies full-time or part-time while working, taking care of children for example&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Activity&lt;/strong&gt;: Learning &amp;amp; Information Seeking ⇔ Information Giving&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Based on the initial observation, people study couple of hours and take a break hourly. Lot of people are also short on time. Therefore the lecture and workshop schedules might conflict with other duties.&lt;/p&gt;
+&lt;p&gt;It’s essentially social activity: a student helps peer who is then receiving information. The purpose is to keep the group small, ideally between two people.&lt;/p&gt;
+&lt;p&gt;They can study the same course but basically they share knowledge of a common subject so that, for example, the information receiver is able to continue to finish her assignments.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;: UbiKampus (co-working space)&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Since it’s a library, people have to behave accordingly&lt;/li&gt;
+&lt;li&gt;People have roles but they are equal&lt;/li&gt;
+&lt;li&gt;Within the library opening hours&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Technology&lt;/strong&gt;: Web / Mobile App (interface)&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Location: QR code&lt;/li&gt;
+&lt;li&gt;Peers: Chat&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;interview--observation-findings&#34;&gt;Interview &amp;amp; Observation findings&lt;/h2&gt;
 &lt;p&gt;The interview was done for five participants—three women and two men. They all study different things, one Bachelor’s student and four Master’s students. Their library use varies from daily to &lt;em&gt;&amp;ldquo;not that often&amp;rdquo;&lt;/em&gt;. All participants study also in other libraries, such as Kaisa.&lt;/p&gt;
 &lt;p&gt;Interview and observation focused mainly on library use and study environment and the combined findings suggest that people study, seek information and use computers. Finding a place to study or other students happens primarily by visually browsing the space and walking around, causing noises—even though it’s a library and speaking out loud is discouraged, it’s not as quiet as one would expect. People also don’t take breaks (leave their place) as regularly as they said in the interviews. It looks like that, in the evening in Kaisa house, group rooms could be utilized more efficiently, so ad hoc study groups could be potentially created there, in addition to Kumpula campus.&lt;/p&gt;
@@ -221,7 +251,7 @@
       <pubDate>Fri, 30 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://jpsalo.github.io/project/em/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://jpsalo.github.io/img/em-1.jpg&#34; alt=&#34;Example image&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://jpsalo.github.io/img/em-1.jpg&#34; alt=&#34;Extended Mind&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You spend some of your best working hours focused on the software you use and not on the things you want to get done. Extended Mind provides a super simple, super fast, distraction-free replacement to cluttered office workflow tools. You can access Extended Mind from all of your devices to instantly manage your notes and tasks. This frees you to do what you do best: connect, create and collaborate.&lt;/p&gt;
 &lt;h1 id=&#34;what-is-extended-mind&#34;&gt;What is Extended Mind?&lt;/h1&gt;
 &lt;p&gt;Extended Mind is a minimalist, cross-platform, open source productivity service for note and task management.&lt;/p&gt;
