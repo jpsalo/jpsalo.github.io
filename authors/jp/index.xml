@@ -10,5 +10,25 @@
 	    <atom:link href="https://jpsalo.github.io/authors/jp/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title></title>
+      <link>https://jpsalo.github.io/me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jpsalo.github.io/me/</guid>
+      <description>&lt;p&gt;JP is a usability enthusiast who focuses on optimizing every aspect of product development, from the end user experience to the code architecture. Currently he is finding ways to create the best designer-developer handoff.&lt;/p&gt;
+&lt;p&gt;JP is a programmer since 2010 and specialize in frontend development. He has solid, hands-on experience in product development for the web, backed by CS, HCI and cognitive science studies. JP strives for elegant and future-proof solutions which are both efficient and intuitive to use.&lt;/p&gt;
+&lt;p&gt;Working at large and small companies and in projects of different scale and age has provided JP insight into team dynamics and business reasoning behind the code.&lt;/p&gt;
+&lt;p&gt;JP believes that the users of a service can&amp;rsquo;t be an afterthought—these people should be at the core of the work. He understands the value of a genuine connection with the users and knows that the best result is achieved when everyone is as close to the people as possible. He enjoys being part of the early-stage prototyping with pen and paper and gets most satisfaction from building complex glitch-free UIs.&lt;/p&gt;
+&lt;p&gt;JP specializes in User-Centered Design, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finding out people&amp;rsquo;s need with interviews and observation&lt;/li&gt;
+&lt;li&gt;Prototype-oriented design and implementation&lt;/li&gt;
+&lt;li&gt;Crafting, conducting and analysing usability studies&lt;/li&gt;
+&lt;li&gt;Building interactive systems&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
